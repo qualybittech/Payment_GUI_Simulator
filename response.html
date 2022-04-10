@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Payment API test GUI</title>
+</head>
+<body style="background-color:powderblue;">
+    <h1>Payment GUI simulator for testing</h1>
+    <p>Enter the Amount / Mobile number / Select action to process the request</p>
+    <form action="/payment_Process" method="post">
+        <div>
+        Amount: <input name="amount" type="text" /> <br />
+        </div>
+        <div>
+        Mobile Number: <input name="mobilenumber" type="text" /> <br />
+        </div>
+        <div>
+        <input type="radio" id="Receive_Money" name="option" value="Receive Money">
+        <label for="html">Receive Money</label><br>
+        <input type="radio" id="Send_Money" name="option" value="Send Money">
+        <label for="css">Send Money</label><br>
+        <input type="radio" id="Check_Balance" name="option" value="Check Balance">
+        <label for="javascript">Check Balance</label>
+        </div>
+        <div>
+        <input type="submit" />
+        </div>    
+    </form>
+</body>
+</html>
